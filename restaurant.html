@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        #top{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid rgb(197, 191, 191);
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            background-color: ghostwhite;
+        }
+
+        .inner{
+            height: 50%;
+            width: 55%;
+            display: flex;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .logo_1{
+            height: 53px;
+            width: 170px; 
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5px;
+        }
+
+        .logo{
+            height: 50px;
+            width: 50px;
+        }
+
+        .menu{
+            margin: 10px;
+        }
+
+        .box{
+            height: 2px;
+            width: 5px;
+            border:2px solid black;
+            color: black;
+        } 
+
+        #main_food_img, desc{
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #main_food_img{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+
+        .desc{
+            position: relative;
+            top: 25px;
+        }
+
+        .green_btn{
+            background-color: green;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            font-size: 17px;
+            transition: 0.5s;
+        }
+
+        .green_btn:hover{
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .main_food_img:hover{
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .offer{
+            height: 20%;
+            width: 90%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        .list{
+            display: flex;
+        }
+
+        .list h3{
+            transition: 1s;
+        }
+
+        .list h3:hover{
+            font-size: 20px;
+        }
+
+        .offer_img{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            top: 20px;
+            margin: 7px;
+        }
+
+        #album{
+            height: 650px;
+            width: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .album_img{
+            height: 300px;
+            width: 310px;
+            border-radius: 10px;
+            transition: 0.5s;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        .album_img:hover{
+            box-shadow: 7px 7px 17px black;
+        }
+
+        .contact{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .media{
+            display: flex;
+        }
+
+        .media_logo{
+            height: 30px;
+            width: 30px;
+            transition: 1s;
+            border-radius: 50%;
+        }
+
+        .big{
+            height: 32px;
+            width: 32px;
+        }
+
+        .media_logo:hover{
+            box-shadow: 5px 5px 10px rgb(114, 114, 114);
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <nav id="top">
+            <div class="logo_1">
+                <img  class="logo" src="food/logo.jpg" alt="Not found">
+                <h1>Company</h1>
+            </div>
+            <div class="menu"><img src="food/three.png" alt="Not found"></div>
+        </nav>
+    </header>
+    <main>
+        <br> <br> <br> <br> <br>
+        <div class="inner">
+            <img id="main_food_img" src="food/main_food.jpg" alt="Not found">
+            <div class="desc">
+                <button class="green_btn">50% off on all food</button>
+                <h1>Enjoy Your</h1>
+                <h1>Delicious Food</h1>
+                <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptas repudiandae repellat asperiores nihil</p>
+                <button class="green_btn">Explore Now</button>
+            </div>
+        </div>
+        <div class="offer">
+            <div class="list">
+                <div><img class="offer_img" src="food/discount.jpg" alt="Not found"></div>
+                <div>
+                    <h3>Discount Voucher</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, eaque.</p>
+                </div>
+            </div>
+            <div class="list">
+                <div><img class="offer_img" src="food/basket.jpg" alt="Not found"></div>
+                <div>
+                    <h3>Fresh Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quam?</p>
+                </div>
+            </div>
+            <div class="list">
+                <div><img class="offer_img" style="width: 50px;" src="food/home.png" alt="Not found"></div>
+                <div>
+                    <h3>Free Home Delivery</h3>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, libero.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <button class="green_btn" style="position: relative;left: 47%;">Our Menu</button>
+        <h3 style="position: relative;left: 45%;">Explore our menu</h3>
+        <div id="album">
+            <img src="food/dosa.jpg" alt="Not found" class="album_img">
+            <img src="food/chai.jpg" alt="Not found" class="album_img">
+            <img src="food/maggi.jpg" alt="Not found" class="album_img">
+            <img src="food/pasta.jpg" alt="Not found" class="album_img">
+            <img src="food/rasgulla.jpg" alt="Not found" class="album_img">
+            <img src="food/paneer.jpg" alt="Not found" class="album_img">
+        </div>
+        <hr>
+    </main>
+    <footer>
+        <div class="contact">
+            <div class="logo_1">
+                <img  class="logo" src="food/logo.jpg" alt="Not found">
+                <h1>Company</h1>
+            </div>
+            <div class="info">
+                <h4>Main Links</h4>
+                <p>Order tracking</p>
+                <p>New order</p>
+                <p>Contact us</p>
+                <a href="#">News and Blogs</a>
+            </div>
+            <div class="info">
+                <h4>Support</h4>
+                <p>About us</p>
+                <p>Privacy policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="info">
+                <h4>Support</h4>
+                <input type="text" placeholder="Enter your email">
+                <p>Follow us</p>
+                <div id="media">
+                    <img src="logo/Facebook_logo.png" alt="Not found" class="media_logo">
+                    <img src="logo/twitter_logo.png" alt="Not found" class="media_logo">
+                    <img src="logo/instagram_logo.png" alt="Not found" class="media_logo big">
+                    <img src="logo/youtube_logo.png" alt="Not found" class="media_logo big">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
